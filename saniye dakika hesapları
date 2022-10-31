@@ -1,0 +1,28 @@
+
+
+function result = donustur(x)
+gunsaniye = 24*60*60;
+saniyesaat = 60*60;
+saniyedakika=60;
+
+gun = floor(x / gunsaniye);
+kalansaniye=mod(x , gunsaniye);
+saat = floor(kalansaniye / saniyesaat);
+kalansaniye = mod (kalansaniye, saniyesaat)
+dakika = kalansaniye / saniyedakika;
+kalansaniye= mod(kalansaniye, saniyedakika);
+result = [gun,saat,dakika,kalansaniye]
+end
+
+
+
+
+
+function a = polnom(x)
+a = 3.*x.^3 + 5.*x.^2 + 2.*x -1;
+end
+
+function result=donustur(x)
+gun = x/ (24*60*60);
+end
+
